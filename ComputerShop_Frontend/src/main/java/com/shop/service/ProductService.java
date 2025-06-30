@@ -16,4 +16,13 @@ public interface ProductService {
 
 	List<ProductRespDto> showAllProduct();
 
+
+	ProductRespDto fetchData(int id);
+
+
+	boolean updateProduct(ProductReqDto reqDto);
+
+
+	ProductRespDto deleteProduct(int id);
+
 }

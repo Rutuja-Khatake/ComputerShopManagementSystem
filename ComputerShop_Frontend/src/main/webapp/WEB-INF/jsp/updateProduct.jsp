@@ -28,31 +28,34 @@
         <div class="page-content">
             <div class="card form-container shadow">
                 <div class="card-body p-4">
-                    <h4 class="mb-4 text-center">Add Product</h4>
-                    <form class="row g-3" action="addProduct" method="post">
+                    <h4 class="mb-4 text-center">Update Product</h4>
+                    <form class="row g-3" action="updateData" method="post">
+                     <div class="col-md-12">
+                            <input type="hidden" name="id" class="form-control" value="${data.id }" valid="input25" placeholder="Product Name">
+                        </div>
                         <div class="col-md-12">
                             <label for="input25" class="form-label">Product Name</label>
-                            <input type="text" name="product_Name" class="form-control" id="input25" placeholder="Product Name">
+                            <input type="text" name="product_Name" class="form-control" value="${data.product_Name }" valid="input25" placeholder="Product Name">
                         </div>
                         <div class="col-md-12">
                             <label for="input26" class="form-label">Category</label>
-                            <input type="text" name="category" class="form-control" id="input26" placeholder="Category">
+                            <input type="text" name="category" class="form-control" value="${data.category }" id="input26" placeholder="Category">
                         </div>
                         <div class="col-md-12">
                             <label for="input27" class="form-label">Brand</label>
-                            <input type="text"		 name="brand" class="form-control" id="input27" placeholder="Enter Brand">
+                            <input type="text"	 name="brand" class="form-control" value="${data.brand }" id="input27" placeholder="Enter Brand">
                         </div>
                         <div class="col-md-12">
                             <label for="input28" class="form-label">Purchase Rate</label>
-                            <input type="text" name="purchase_rate" class="form-control" id="input28" placeholder="Enter Purchase Rate">
+                            <input type="text" name="purchase_rate" class="form-control" value="${data.purchase_rate }" id="input28" placeholder="Enter Purchase Rate">
                         </div>
                         <div class="col-md-12">
                             <label for="input29" class="form-label">Selling Rate</label>
-                            <input type="text" name="selling_rate" class="form-control" id="input29" placeholder="Enter Selling Rate">
+                            <input type="text" name="selling_rate" class="form-control" value="${data.selling_rate }" id="input29" placeholder="Enter Selling Rate">
                         </div>
                         <div class="col-md-12">
                             <label for="input31" class="form-label">Stock</label>
-                            <input type="text" name="stock" class="form-control" id="input31" placeholder="Enter Stock">
+                            <input type="text" name="stock" class="form-control" value="${data.stock }" id="input31" placeholder="Enter Stock">
                         </div>
                        
                         <div class="col-md-12 form-check">
