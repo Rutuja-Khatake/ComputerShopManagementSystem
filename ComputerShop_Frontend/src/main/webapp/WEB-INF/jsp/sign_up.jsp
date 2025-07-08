@@ -74,6 +74,7 @@
 													
 													<option value="Admin">Admin</option>
 													<option value="Customer">Customer</option>
+													<option value="User">User</option>
 												
 												</select>
 											</div>

@@ -32,7 +32,7 @@
                     <form class="row g-3" action="addProduct" method="post">
                         <div class="col-md-12">
                             <label for="input25" class="form-label">Product Name</label>
-                            <input type="text" name="product_Name" class="form-control" id="input25" placeholder="Product Name">
+                            <input type="text" name="productName" class="form-control" id="input25" placeholder="Product Name">
                         </div>
                         <div class="col-md-12">
                             <label for="input26" class="form-label">Category</label>

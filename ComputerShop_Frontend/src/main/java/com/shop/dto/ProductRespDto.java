@@ -9,11 +9,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ProductRespDto {
 
-	private int id;
-	private String product_Name;
+	private int productId;
+	private String productName;
 	private String category;
 	private String brand;
 	private Float purchase_rate;
 	private Float selling_rate;
-	private int stock;
+    private int stock;
 }

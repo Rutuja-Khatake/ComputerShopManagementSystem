@@ -2,25 +2,25 @@ package com.shop.Entity;
 
 
 public class ProductManager {
-	private int id;
-	private String product_Name;
+	private int productId;
+	private String productName;
 	private String category;
 	private String brand;
 	private Float purchase_rate;
 	private Float selling_rate;
 	private int stock;
 	
-	public int getId() {
-		return id;
+	public int getproductId() {
+		return productId;
 	}
-	public void setProduct_id(int id) {
-		this.id = id;
+	public void setProductId(int productId) {
+		this.productId = productId;
 	}
-	public String getProduct_Name() {
-		return product_Name;
+	public String getProductName() {
+		return productName;
 	}
-	public void setProduct_Name(String product_Name) {
-		this.product_Name = product_Name;
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 	public String getCategory() {
 		return category;
@@ -53,11 +53,11 @@ public class ProductManager {
 		this.stock = stock;
 	}
 	
-	public ProductManager(int id, String product_Name, String category, String brand, Float purchase_rate,
+	public ProductManager(int productId, String productName, String category, String brand, Float purchase_rate,
 			Float selling_rate, int stock) {
 		super();
-		this.id = id;
-		this.product_Name = product_Name;
+		this.productId = productId;
+		this.productName = productName;
 		this.category = category;
 		this.brand = brand;
 		this.purchase_rate = purchase_rate;

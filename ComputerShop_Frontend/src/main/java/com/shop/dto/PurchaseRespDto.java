@@ -3,6 +3,8 @@ package com.shop.dto;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,12 +14,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class PurchaseRespDto {
 
-	int purchaseId;
-	String vendorName;
-	int productId; 
-	int quantity;
-	BigDecimal rate;
-	BigDecimal total;
-	LocalDate purchaseDate;
-
+	private int purchaseId;
+	private String vendorName;
+	private String productName;
+	private int productId;
+	private int quantity;
+	private BigDecimal rate;
+	private BigDecimal total;
+	 @DateTimeFormat(pattern = "yyyy-MM-dd") 
+	private LocalDate purchaseDate;
 }

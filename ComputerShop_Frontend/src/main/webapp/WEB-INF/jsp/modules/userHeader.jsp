@@ -50,16 +50,16 @@
                     <a href="javascript:;" class="has-arrow">
                         <div class="parent-icon"><i class='bx bx-home-alt'></i>
                         </div>
-                        <div class="menu-title">Dashboard</div>
+                        <div class="menu-title">User</div>
                     </a>
                     <ul>
-                        <li> <a href="add"><i class='bx bx-radio-circle'></i>AddProduct</a>
+                        <li> <a href="addUser"><i class='bx bx-radio-circle'></i>Product</a>
                         </li>
-                        <li> <a href="showAllList"><i class='bx bx-radio-circle'></i>Show</a>
+                        <li> <a href=""><i class='bx bx-radio-circle'></i>Show</a>
                         </li>
                         <li> <a href="index3.html"><i class='bx bx-radio-circle'></i>Graphical</a>
                         </li>
-                    </ul>
+                    </ul>	
                 </li>
                 <li>
                     <a href="javascript:;" class="has-arrow">
