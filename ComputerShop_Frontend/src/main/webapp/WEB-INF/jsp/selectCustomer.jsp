@@ -15,7 +15,7 @@
 	<div class="page-wrapper">
 		<div class="page-content">
 
-			<h6 class="mb-0 text-uppercase">Show All Product</h6>
+			<h6 class="mb-0 text-uppercase">Show All Customers</h6>
 			<hr />
 			<div class="card">
 				<div class="card-body">
@@ -23,31 +23,30 @@
 						<table id="example2" class="table table-striped table-bordered">
 							<thead>
 								<tr>
-									<th>Product Id</th>
-									<th>Product Name</th>
-									<th>Category</th>
-									<th>Brand</th>
-									<th>Purchase Rate</th>
-									<th>Selling Rate</th>
-									<th>Stock Quality</th>
+									<th>Customer Id</th>
+									<th>Customer Name</th>
+									<th>Mobile number</th>
+									<th>Address</th>
 									<th>Action</th>
+
 								</tr>
 							</thead>
 
 							<tbody>
-								<c:forEach items="${productList}" var="list">
+								<c:forEach items="${list}" var="list">
 									<tr>
-										<td>${list.productId}</td>
-										<td>${list.productName}</td>
-										<td>${list.category}</td>
-										<td>${list.brand}</td>
-										<td>${list.purchase_rate}</td>
-										<td>${list.selling_rate}</td>
-										<td>${list.stock}</td>
-										<td><a href="fetchForm?id=${list.productId}" >
-											<button>Edit</button> </a>
-											<a href="deleteForm?id=${list.productId}">	
-											<button>Delete</button></a></td>
+										<td>${list.id}</td>
+										<td>${list.customerName}</td>
+										<td>${list.mobileNumber}</td>
+										<td>${list.address}</td>
+										<td>
+										<a href="fetchCustomerForm?id=${list.id }">
+												<button>Edit</button>
+										</a>
+										 <a href="<%-- deleteForm?id=${list.id } --%>">
+												<button>Delete</button>
+										</a></td>
+
 									</tr>
 
 								</c:forEach>

@@ -15,42 +15,45 @@
 	<div class="page-wrapper">
 		<div class="page-content">
 
-			<h6 class="mb-0 text-uppercase">Show All Product</h6>
+			<h6 class="mb-0 text-uppercase">Show All</h6>
 			<hr />
 			<div class="card">
 				<div class="card-body">
 					<div class="table-responsive">
 						<table id="example2" class="table table-striped table-bordered">
 							<thead>
+							<thead>
 								<tr>
-									<th>Product Id</th>
+									<th>Purchase Id</th>
+									<th>Vendor Name</th>
 									<th>Product Name</th>
-									<th>Category</th>
-									<th>Brand</th>
-									<th>Purchase Rate</th>
-									<th>Selling Rate</th>
-									<th>Stock Quality</th>
-									<th>Action</th>
+									<th>Quantity</th>
+									<th>Rate</th>
+									<th>Total</th>
+									<th>Purchase Date</th>
+									<th>Product Id</th>
 								</tr>
 							</thead>
 
+
+
 							<tbody>
-								<c:forEach items="${productList}" var="list">
+								<c:forEach items="${purchase}" var="list">
 									<tr>
-										<td>${list.productId}</td>
+										<td>${list.purchaseId}</td>
+										<td>${list.vendorName}</td>
 										<td>${list.productName}</td>
-										<td>${list.category}</td>
-										<td>${list.brand}</td>
-										<td>${list.purchase_rate}</td>
-										<td>${list.selling_rate}</td>
-										<td>${list.stock}</td>
-										<td><a href="fetchForm?id=${list.productId}" >
-											<button>Edit</button> </a>
-											<a href="deleteForm?id=${list.productId}">	
-											<button>Delete</button></a></td>
+										<td>${list.quantity}</td>
+										<td>${list.rate}</td>
+										<td>${list.total}</td>
+										<td>${list.purchaseDate}</td>
+										<td>${list.productId}</td>
 									</tr>
 
+
 								</c:forEach>
+
+
 							</tbody>
 
 

@@ -31,11 +31,11 @@
                     <h4 class="mb-4 text-center">Update Product</h4>
                     <form class="row g-3" action="updateData" method="post">
                      <div class="col-md-12">
-                            <input type="hidden" name="id" class="form-control" value="${data.id }" valid="input25" placeholder="Product Name">
+                            <input type="hidden" name="productId" class="form-control" value="${data.productId }" valid="input25" placeholder="Product Id">
                         </div>
                         <div class="col-md-12">
                             <label for="input25" class="form-label">Product Name</label>
-                            <input type="text" name="product_Name" class="form-control" value="${data.product_Name }" valid="input25" placeholder="Product Name">
+                            <input type="text" name="productName" class="form-control" value="${data.productName }" valid="input25" placeholder="Product Name">
                         </div>
                         <div class="col-md-12">
                             <label for="input26" class="form-label">Category</label>

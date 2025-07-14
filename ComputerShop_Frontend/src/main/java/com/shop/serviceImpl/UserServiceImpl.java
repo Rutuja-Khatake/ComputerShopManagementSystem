@@ -36,18 +36,7 @@ public class UserServiceImpl implements UserService {
 		return isGetting;
 	}
 
-//			@Override
-//			public boolean registerSignUp(UserRequestDTO dto) {
-//				HttpHeaders headers = new HttpHeaders();
-//				headers.setContentType(MediaType.APPLICATION_JSON);
-//		
-//				HttpEntity<UserRequestDTO> request = new HttpEntity<>(dto, headers);
-//				String url = "http://localhost:7172/addUser";
-//		
-//				String response = restTemplate.postForObject(url, request, String.class);
-//				System.out.println("Response: " + response);		
-//				return Boolean.TRUE.equals(isAdded);
-//			}
+
 
 			
 	@Override
