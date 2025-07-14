@@ -56,39 +56,76 @@
 					<i class='bx bx-arrow-back'></i>
 				</div>
 			</div>
+
+
 			<!--navigation-->
 			<ul class="metismenu" id="menu">
-				<li><a href="javascript:;" class="has-arrow">
+				<li><a href="javascript:;" class="">
 						<div class="parent-icon">
-							<i class='bx bx-home-alt'></i>
+							<i class='bx bx-product-alt'></i>
 						</div>
-						<div class="menu-title">Product Details</div>
+						<div class="menu-title"><b>Product Details</b></div>
 				</a>
 					<ul>
 						<li><a href="add"><i class='bx bx-radio-circle'></i>AddProduct</a>
 						</li>
 						<li><a href="showAllList"><i class='bx bx-radio-circle'></i>Show</a>
-						</li>
-						<li><a href="updateAllPurchase"><i
-								class='bx bx-radio-circle'></i>Update Purchase</a></li>
-					   </li>
-					   <li><a href="vendorDetails"><i
-								class='bx bx-radio-circle'></i>Add Vendor</a></li>
-					   </li>
-					   <li><a href="getAllVendors"><i
-								class='bx bx-radio-circle'></i>All Vendor</a></li>
-					   </li>
-					</ul>
+						</li></li>
+			</ul>
+		
+			<li><a href="javascript:;" class="">
+					<div class="parent-icon">
+						<!-- <i class='bx bx-home-alt'></i> -->
+					</div>
+					<div class="menu-title"><b>Purchase Details</b></div>
+			</a>
+				<ul>
+
+					<li><a href="addPurchaseProduct"><i
+							class='bx bx-radio-circle'></i>add Purchase</a></li>
+							
+							<li><a href="updatePurchaseProduct"><i
+							class='bx bx-radio-circle'></i>show Purchase</a></li>
+
+				</ul></li>
 
 
+			<li><a href="javascript:;" class="">
+					<div class="parent-icon">
+						<!-- <i class='bx bx-home-alt'></i> -->
+					</div>
+					<div class="menu-title"><b>Vendor Details</b></div>
+			</a>
+				<ul>
+					<li><a href="vendorDetails"><i class='bx bx-radio-circle'></i>Add
+							Vendor</a></li>
+
+					<li><a href="getAllVendors"><i class='bx bx-radio-circle'></i>All
+							Vendor</a></li>
+
+				</ul></li>
 
 
+			<li><a href="javascript:;" class="">
+					<div class="parent-icon">
+						<!-- <i class='bx bx-home-alt'></i> -->
+					</div>
+					<div class="menu-title"><b>Customer Details</b></div>
+			</a>
+				<ul>
+					<li><a href="addCustomers"><i class='bx bx-radio-circle'></i>Add
+							Customer</a></li>
 
 
+					<li><a href="showAllListCustomer"><i
+							class='bx bx-radio-circle'></i>All Customer</a></li>
+				</ul></li>
 
-				<!--end navigation-->
+			<!--end navigation-->
 		</div>
+
 	</div>
+
 	<!--end sidebar wrapper -->
 	<!--start header -->
 	<header>

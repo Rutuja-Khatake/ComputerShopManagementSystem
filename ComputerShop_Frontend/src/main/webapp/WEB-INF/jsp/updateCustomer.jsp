@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Add Vendor</title>
+    <title>Add Product</title>
     <style>
         .form-container {
             max-width: 600px;
@@ -28,26 +28,32 @@
         <div class="page-content">
             <div class="card form-container shadow">
                 <div class="card-body p-4">
-                    <h4 class="mb-4 text-center"> Vendor</h4>
-                   <form class="row g-3" action="addVendor" method="post">
+                    <h4 class="mb-4 text-center">Update Customer</h4>
+                   <form class="row g-3" action="updateCustomerData" method="post">
+                   
+    <div class="col-md-12">
+    
+     
+        <input type="hidden" name="id" class="form-control" value="${data.id}" placeholder="Customer id">
+    </div>
                   
 
     <div class="col-md-12">
     
-        <label class="form-label">Vendor Name</label>
-        <input type="text" name="vendorName" class="form-control" placeholder="Vendor Name">
+        <label class="form-label">Customer Name</label>
+        <input type="text" name="customerName" class="form-control" value="${data.customerName}" placeholder="customer Name">
     </div>
 
    
 
     <div class="col-md-12">
         <label class="form-label">Mobile No.</label>
-        <input type="text" name="mobileNumber" class="form-control" placeholder="MobileNumber">
+        <input type="text" name="mobileNumber" class="form-control" value="${data.mobileNumber}" placeholder="MobileNumber">
     </div>
 
     <div class="col-md-12">
         <label class="form-label">Address</label>
-        <input type="text" name="address" step="0.01" class="form-control" placeholder="Address">
+        <input type="text" name="address" step="0.01" class="form-control" value="${data.address}" placeholder="Address">
     </div>
 
  

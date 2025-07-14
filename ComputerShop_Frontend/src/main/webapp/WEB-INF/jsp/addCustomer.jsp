@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Add Vendor</title>
+    <title>Customer</title>
     <style>
         .form-container {
             max-width: 600px;
@@ -28,14 +28,14 @@
         <div class="page-content">
             <div class="card form-container shadow">
                 <div class="card-body p-4">
-                    <h4 class="mb-4 text-center"> Vendor</h4>
-                   <form class="row g-3" action="addVendor" method="post">
+                    <h4 class="mb-4 text-center"> Customer</h4>
+                   <form class="row g-3" action="addCustomer" method="post">
                   
 
     <div class="col-md-12">
     
-        <label class="form-label">Vendor Name</label>
-        <input type="text" name="vendorName" class="form-control" placeholder="Vendor Name">
+        <label class="form-label">Customer Name</label>
+        <input type="text" name="customerName" class="form-control" placeholder="Customer Name">
     </div>
 
    

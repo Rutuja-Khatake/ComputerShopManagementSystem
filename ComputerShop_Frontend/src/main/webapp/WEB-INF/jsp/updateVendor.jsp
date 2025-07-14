@@ -34,7 +34,7 @@
     <div class="col-md-12">
     
      
-        <input type="hidden" name="id" class="form-control" value="${data.id}" placeholder="Vendor id">
+        <input type="hidden" name="vendorId" class="form-control" value="${data.vendorId}" placeholder="Vendor id">
     </div>
                   
 

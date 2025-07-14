@@ -15,7 +15,7 @@
 	<div class="page-wrapper">
 		<div class="page-content">
 
-			<h6 class="mb-0 text-uppercase">Show All Product</h6>
+			<h6 class="mb-0 text-uppercase">Show All Customers</h6>
 			<hr />
 			<div class="card">
 				<div class="card-body">
@@ -23,8 +23,8 @@
 						<table id="example2" class="table table-striped table-bordered">
 							<thead>
 								<tr>
-									<th>Vendor Id</th>
-									<th>Vendor Name</th>
+									<th>Customer Id</th>
+									<th>Customer Name</th>
 									<th>Mobile number</th>
 									<th>Address</th>
 									<th>Action</th>
@@ -33,14 +33,14 @@
 							</thead>
 
 							<tbody>
-								<c:forEach items="${vendorList}" var="list">
+								<c:forEach items="${list}" var="list">
 									<tr>
-										<td>${list.vendorId}</td>
-										<td>${list.vendorName}</td>
+										<td>${list.id}</td>
+										<td>${list.customerName}</td>
 										<td>${list.mobileNumber}</td>
 										<td>${list.address}</td>
 										<td>
-										<a href="fetchVendorForm?id=${list.vendorId }">
+										<a href="fetchCustomerForm?id=${list.id }">
 												<button>Edit</button>
 										</a>
 										 <a href="<%-- deleteForm?id=${list.id } --%>">
