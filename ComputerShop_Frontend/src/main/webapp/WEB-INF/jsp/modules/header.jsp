@@ -80,11 +80,13 @@
 					<div class="menu-title"><b>Purchase Details</b></div>
 			</a>
 				<ul>
+				<!-- <li><a href="addPurchaseProduct"><i class='bx bx-radio-circle'></i>Purchase Product</a>
+						</li>	 -->
 
 					<li><a href="addPurchaseProduct"><i
 							class='bx bx-radio-circle'></i>add Purchase</a></li>
 							
-							<li><a href="updatePurchaseProduct"><i
+							<li><a href="showPurchaseProduct"><i
 							class='bx bx-radio-circle'></i>show Purchase</a></li>
 
 				</ul></li>

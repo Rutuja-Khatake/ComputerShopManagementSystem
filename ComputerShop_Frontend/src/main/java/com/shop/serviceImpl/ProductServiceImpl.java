@@ -51,18 +51,7 @@ private	RestTemplate restTemplate;
 
 	}
 
-//	@Override
-//	public boolean updateProduct(ProductReqDto reqDto) {
-//		HttpHeaders headers = new HttpHeaders();
-//		headers.setContentType(MediaType.APPLICATION_JSON);
-//
-//		HttpEntity<ProductReqDto> req = new HttpEntity<ProductReqDto>(reqDto, headers);
-//		String url = "http://localhost:7172/product/updateProduct";
-//
-//		ProductRespDto isUpdate = restTemplate.postForObject(url, req, ProductRespDto.class);
-//
-//		return true;
-//	}
+
 
 	@Override
 	public boolean updateProduct(ProductReqDto reqDto) {
