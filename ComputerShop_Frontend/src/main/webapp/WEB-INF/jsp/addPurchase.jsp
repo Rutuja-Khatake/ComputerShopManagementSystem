@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+	<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
@@ -32,7 +32,7 @@
 			<div class="card form-container shadow">
 				<div class="card-body p-4">
 					<h4 class="mb-4 text-center">Purchase</h4>
-					<form class="row g-3" action="addPurchase" method="post">
+					<form class="row g-3" action="addPurchases" method="post">
 
 						<%-- 					<input type="hidden" name="purchaseId" value="${product.id}" />
 	 --%>
@@ -58,8 +58,8 @@
 
 						<!-- VENDOR -->
 						<div class="col-md-12">
-							<label class="form-label">Vendor Name</label> <select
-								name="vendorId" class="form-control" required>
+							<label class="form-label">Vendor Name</label>
+							 <select name="vendorId" class="form-control" required>
 								<option value="" disabled selected>-- Select Vendor --</option>
 								<c:forEach var="vendor" items="${vendorList}">
 									<option value="${vendor.vendorId}">${vendor.vendorName}</option>
@@ -68,14 +68,14 @@
 						</div>
 						<div class="col-md-12">
 							<!-- PRODUCT -->
-							<label class="form-label">Product Name</label> <select
-								name="productId" class="form-control" required>
+							<label class="form-label">Product Name</label> 
+							<select name="productId" class="form-control" required>
 								<option value="" disabled selected>-- Select Product --</option>
 								<c:forEach var="product" items="${productList}">
 									<option value="${product.productId}">${product.productName}</option>
 								</c:forEach>
 							</select>
-						</div>
+						</div>			
 
 						<div class="col-md-12">
 							<label class="form-label">Quantity</label> <input type="number"

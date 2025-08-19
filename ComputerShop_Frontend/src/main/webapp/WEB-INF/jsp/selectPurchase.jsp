@@ -25,29 +25,43 @@
 							<thead>
 								<tr>
 									<th>Purchase Id</th>
+									<th>Vendor Id</th>
 									<th>Vendor Name</th>
+									<th>Product Id</th>
 									<th>Product Name</th>
 									<th>Quantity</th>
 									<th>Rate</th>
 									<th>Total</th>
 									<th>Purchase Date</th>
-									<th>Product Id</th>
+									<th>Action</th>
+									
 								</tr>
 							</thead>
 
 
 
 							<tbody>
-								<c:forEach items="${purchase}" var="list">
+								<c:forEach items="${PurchaseList}" var="list">
 									<tr>
 										<td>${list.purchaseId}</td>
+										<td>${list.vendorId}</td>
 										<td>${list.vendorName}</td>
+										<td>${list.productId}</td>
 										<td>${list.productName}</td>
 										<td>${list.quantity}</td>
 										<td>${list.rate}</td>
 										<td>${list.total}</td>
 										<td>${list.purchaseDate}</td>
-										<td>${list.productId}</td>
+										<td>
+									<a href="updatePurchaseData?purchaseId=${list.purchaseId}">
+											    <button>Edit</button>
+									</a>
+
+										<a href="">
+										<button>Delete</button>
+										</a>
+										</td>
+										
 									</tr>
 
 
